@@ -1,0 +1,46 @@
+class AbstractDemo {
+public static void main(String[] args) {
+	
+	 Circle c=new Circle();
+     c.calculateArea();
+     c.setColor("green");
+     Squre s=new Squre();
+     s.calculateArea();
+     s.setColor("red");
+             
+}
+}
+class Circle extends Shape{
+	 double r=5.0;
+	 double area;
+	 void calculateArea(){
+		area=3.142*r*r;
+		System.out.println(area);
+	 }
+
+}
+
+abstract public class Shape {
+String color;
+
+abstract void calculateArea();
+
+void setColor(String color){
+	this.color=color;
+	System.out.println(color);
+}
+
+}
+ class Squre extends Shape{
+	 
+	 double l=4.0;
+	 double b=4.0;
+	 double a;
+	 void calculateArea(){
+		 a=l*b;
+		 System.out.println(a);
+	 }
+
+}
+
+

@@ -1,0 +1,96 @@
+package vech;
+
+public class test {
+public static void main(String[] args) {
+	Ivehicl  c=new Car();
+	c.drive();
+	c.turnLeft();
+	c.brake();
+	Ivehicl  t=new Train();
+	t.drive();
+	t.turnLeft();
+	t.brake();
+	IpublicTra i=new Train();
+	i.getNumberOfpep();
+	
+}
+}
+package vech;
+
+public class Train implements Ivehicl, IpublicTra{
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+		System.out.println("The train is turning left etc");
+		
+	}
+
+	@Override
+	public void turnLeft() {
+		// TODO Auto-generated method stub
+		System.out.println("The train is turning left etc");
+	}
+
+	@Override
+	public void brake() {
+		// TODO Auto-generated method stub
+		System.out.println("The train is turning left etc");
+	}
+
+	@Override
+	public void getNumberOfpep() {
+		// TODO Auto-generated method stub
+		System.out.println("The train is turning left etc");
+	}
+
+}
+package vech;
+
+public class Car extends MotorisedVechicle implements Ivehicl {
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+		System.out.println("the car is in the brake mode etc");
+		
+	}
+
+	@Override
+	public void turnLeft() {
+		// TODO Auto-generated method stub
+		System.out.println("the car is in the brake mode etc");
+	}
+
+	@Override
+	public void brake() {
+		// TODO Auto-generated method stub
+		System.out.println("the car is in the brake mode etc");
+	}
+	
+
+}
+
+package vech;
+
+public class MotorisedVechicle {
+
+	
+	void checkMotor(){
+		System.out.println("the motor of  the vechicle is in good condition");
+	}
+
+}
+package vech;
+
+public interface Ivehicl {
+	void drive();
+	void turnLeft();
+	void brake();
+
+}
+package vech;
+
+public interface IpublicTra {
+void getNumberOfpep();
+}
