@@ -1,0 +1,31 @@
+
+OCJA SET1
+
+1.hello is printed,option a
+2.5
+3.null
+  null
+4.APRIL:4
+5.b e c d
+6.a option
+7.none of the options
+8.c
+9.d
+10.option c
+
+
+
+
+
+OCJA SET-2
+---------
+1.B
+2.D,F
+3.B
+4.B
+5.B
+6.B
+7.B
+8.A
+9.C
+10.D
